@@ -1,9 +1,14 @@
 import React from 'react';
-
+import { Switch, Route } from 'react-router-dom';
+import Main from './pages';
 import './css/App.css';
 
 function App() {
-  return <div className="App">Netflix project</div>;
+  return (
+    <Switch>
+      <Route path="/" component={Main} />
+    </Switch>
+  );
 }
 
 export default App;
